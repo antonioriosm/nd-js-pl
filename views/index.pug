@@ -1,0 +1,49 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+    title= title
+    link(rel='stylesheet', href='/css/materialize.min.css')
+    link(rel='stylesheet', href='/css/app.css')
+  body
+    section#main_container
+      .container
+        .row
+          .col.s10.push-s1
+            .row
+              .col.m5.hide-on-small-only
+                img.iphone(src="/img/iphone.jpg", alt="Iphone")
+              .col.s12.m7
+                .row
+                  .signup-box
+                  h1.pg= title
+                  form.signup-form
+                    h2 Regístrate para ver fotos
+                    .section
+                      a.btn.btn-fb.hide-on-small-only Inicia con Facebook
+                      a.btn.btn-fb.hide-on-med-and-up Inicia sesión
+                    .divider
+                    .section
+                      input(type="email", name="email", placeholder='Correo Electrónico')
+                      input(type="text", name="name", placeholder='Nombre Completo')
+                      input(type="text", name="username", placeholder='Nombre de Usuario')
+                      input(type="password", name="password", placeholder='Contraseña')
+                      button.btn.waves-effect.waves-light.btn-signup(type='submit') Regístrate
+                .row
+                  .login-box
+                    | ¿Tienes una cuenta?&nbsp;
+                    a(href='/signin') Entrar
+    footer.site-footer
+      .container
+        .row
+          .col.s12.l3.center-align
+            a.dropdown-button.btn.btn-flat(href='#', data-activates='dropdown1') Idioma
+            ul#dropdown1.dropdown-content
+              li: a(href='#!') Español
+              li: a(href='#!') Inglés
+          .col.s12.l3.push-l6.center-align
+            | &copy; 2017 - PlG
+    
+    script(type='text/javascript', src='/js/jquery-3.2.1.min.js')
+    script(type='text/javascript', src='/js/materialize.min.js')
