@@ -1,0 +1,19 @@
+{
+  "name": "nd-js-pl",
+  "description": "curso de javascript",
+  "main": "server.js",
+  "authors": [
+    "antonio.riosm@gmail.com"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/antonioriosm/nd-js-pl",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}

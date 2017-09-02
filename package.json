@@ -4,14 +4,19 @@
   "description": "curso de javascript",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
   "author": "antonio.riosm@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.15.4",
+    "materialize-css": "^0.100.2",
     "morgan": "^1.8.2",
     "pug": "^2.0.0-rc.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
   }
 }
